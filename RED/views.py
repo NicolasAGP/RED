@@ -8,7 +8,7 @@ import json
 
 def hello_world(request):
     """Return a greeting(Saludo)."""
-      
+
     return HttpResponse('Wena nico tu hora es {now}'.format(
         now=datetime.now().strftime('%b %dth, %Y - %H:%M hrs')
         ))
@@ -34,4 +34,3 @@ def say_hi(request, name, age):
     else:
         message= 'Hello, {}! Welcome to RED'. format(name)
     return HttpResponse(message)
-    
