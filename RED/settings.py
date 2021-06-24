@@ -42,7 +42,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'django-insecure-+dj7c44y^ksvdm11k3d%v5hl*=2!drdedm!q+18^ev=8@(x#ev'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 #ALLOWED_HOSTS = []
@@ -104,9 +104,9 @@ WSGI_APPLICATION = 'RED.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'RED',
+        'NAME': 'red',
         'USER': 'nico',
-        'PASSWORD': 'GHH2020',
+        'PASSWORD': 'ghh2020',
         'HOST': '127.0.0.1',
         'PORT': '5432'
     }
